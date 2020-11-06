@@ -54,13 +54,13 @@ My personal IP address
 Machines within the network can only be accessed by SSH.
 The ELK Server is accessed through SSH form the Jump Box from my personal IP address._
 A summary of the access policies in place can be found in the table below.
-| Name      | Publicly Accessible | Allowed IP Addresses |
-|-----------|---------------------|----------------------|
-| Jump Box  |     No              | SSH MY IP            |
-| Web-1     |    Yes              |13.68.170.91, 10.0.0.4|
-| Web-2     |    Yes              |13.68.170.91, 10.0.0.4|
-| Web-3     |    Yes              |13.68.170.91, 10.0.0.4|
-| ELK Server|    No               |SSH 10.1.0.4:5601     |
+| Name      | Publicly Accessible | Allowed IP Addresses   |
+|-----------|---------------------|------------------------|
+| Jump Box  |     No              | SSH MY IP              |
+| Web-1     |    Yes              |52.249.197.220, 10.0.0.4|
+| Web-2     |    Yes              |52.249.197.220, 10.0.0.4|
+| Web-3     |    Yes              |52.249.197.220, 10.0.0.4|
+| ELK Server|    No               |SSH 10.1.0.4:5601       |
 
 ### Elk Configuration
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
@@ -75,8 +75,8 @@ The playbook implements the following tasks:
 
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
-**Note**: The following image link needs to be updated. Replace `docker_ps_output.png` with the name of your screenshot image file.  
-![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
+ 
+![](./ansible/Diagrams/docker_ps.PNG)
 
 Target Machines & Beats
 This ELK server is configured to monitor the following machines:
